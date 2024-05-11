@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    background-color: rgb(125, 193, 193);
+    width: auto;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    /* background: linear-gradient(135deg,rgb(0, 217, 255),blue); */
+}
+
+h1 {
+    font-size: 35px;
+    text-shadow: 1px 1px 5px rgb(146, 146, 146);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 95%;
+    margin: auto auto;
+    margin-top: 10px;
+    background: linear-gradient(135deg,rgb(0, 217, 255),blue);
+    text-align: center;
+    border-radius: 30px;
+}
+
+.main {
+    position: relative;
+}
+
+span {
+    font-size: larger;
+    font-family: cursive;
+}
+
+.text {
+    height: 25px;
+    width: 250px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: large;
+    background-color: rgb(233, 214, 192);
+}
+
+form {
+    position: relative;
+    display: none;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    margin-top: -30px;
+}
+
+.btn {
+    height: 30px;
+    position: relative;
+    top: 8px;
+    right: 40px
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: rgba(255, 136, 0, 0.714);
+}
+.name{
+    font-size: 27px;
+}
+
+.temp {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.condition {
+    position: relative;
+    top: 0px;
+    text-align: center;
+
+}
+
+.humid,
+.wind {
+    position: relative;
+    top: 245px;
+    margin: 10px 10px;
+}
+
+.add {
+    position: relative;
+    top: -50px;
+    text-align: right;
+    margin-right: 25px;
+}
+
+aside {
+    display: inline;
+}
+
+.h,
+.w {
+    position: relative;
+    bottom: 25px;
+}
+.last{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

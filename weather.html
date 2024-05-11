@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="website icon" href="weather.png">
+    <link rel="stylesheet" href="weather.css">
+</head>
+
+<body>
+    <section class="container">
+        <h1>Weather app</h1>
+        <span class="add"><img src="magnifier.png" alt="" class="adding" width="35"></span>
+        <form>
+            <input type="text" class="text" placeholder="Enter city name" required>
+            <img src="magnifier.png" alt="" class="btn">
+        </form>
+        <div class="main">
+            <span class="name">Mysore</span><br>
+            <span class="temp">30°C</span><br>
+            <span class="condition">Clouds</span>
+            <span class="icon"><i id='04n'></i></span><br>
+                <div class="last">
+            <span class="humid"><img class="h-img" src="humidity.png" width="70">
+                <aside class="h">70 %</aside>
+            </span>
+            <span class="wind"><img class="w-img" src="wind.png" width="70">
+                <aside class="w">5.5 m/s</aside>
+            </span></div>
+        </div>
+    </section>
+
+</body>
+<script src="weather.js"></script>
+
+</html>
+<!-- {temp: 16.02, humid: 49, condition: 'Clouds', wind: 6.17, icon: '02d'} -->
