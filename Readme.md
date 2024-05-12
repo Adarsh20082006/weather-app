@@ -1,7 +1,7 @@
 # Weather app
 
 This source contains a simple and basic weather app using a public weather APIs.  
-Since it does not having http respond from the API so website is not accessible.
+Since it does not having http respond from the API so **website is not accessible**.
 ## Demo of our app
 
 Mainly, User can able to access there location's weather just by entering the **City name**.  
