@@ -54,4 +54,4 @@ document.querySelector(".btn").addEventListener("click",()=>{
     }else{  document.querySelector(".invalid").textContent="Please enter a valid city name";}
 });
 
-getWeather();
+// getWeather();
