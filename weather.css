@@ -17,10 +17,10 @@ h1 {
 .container {
    
     min-height: 80vh;
-    height: 80vh;
+    height: 90%;
     width: 95%;
 
-    margin-top: 10px;
+  
     background: linear-gradient(135deg,rgb(0, 217, 255),blue);
     text-align: center;
     border-radius: 30px;
@@ -48,9 +48,9 @@ span {
 
 form {
     position: relative;
-    display: none;
+    /* display: none; */
     margin-left: 40px;
-    margin-bottom: 10px;
+    
     margin-top: -30px;
 }
 
@@ -66,7 +66,7 @@ form {
     background-color: rgb(0, 149, 255);
 }
 .name{
-    font-size: 27px;
+    font-size: 30px;
 }
 
 .temp {
@@ -74,25 +74,20 @@ form {
     top: 0px;
     left: 0px;
     text-align: center;
-    font-size: 30px;
+    font-size: 28px;
 }
 
 .condition {
     position: relative;
-    top: 0px;
+    top:-30px;
     text-align: center;
 
+}.icon{
+    margin-top: -40px;
 }
 
-/* .humid,
-.wind {
-    position: relative;
-    top: 245px;
-    margin: 10px 10px;
-} */
-
-
 .add {
+    display: none;
     position: relative;
     top: -25px;
     text-align: right;
@@ -107,25 +102,26 @@ aside {
 .w {
     position: relative;
     bottom: 25px;
+    font-size: larger;
 }
 .last{
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
-    top:220px;
-    margin: 10px;
+    top:200px;
+    color: rgb(127, 220, 227);
+    margin: 15px;
 }
 @media screen and (max-width:460px){
-    
+    body{
+        height: 100vh;
+    }
 .text {
     height: 20px;
     width: 150px;
 }
-.container {
-
-    width: 95%;
-}.last{
-      top:210px;
+.last{
+      top: 70px;
 }
 }

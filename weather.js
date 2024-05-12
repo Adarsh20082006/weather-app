@@ -34,6 +34,8 @@ async function getWeather(){
     document.querySelector(".condition").textContent=weatherData.condition;
     document.querySelector(".h").textContent=`${weatherData.humid} %`;
     document.querySelector(".w").textContent=`${weatherData.wind} m/s`;
+    document.querySelector(".i-img").setAttribute('src',`https://openweathermap.org/img/wn/${weatherData.icon}@2x.png`)
+   
 }
 document.querySelector(".adding").addEventListener("click",()=>{
     document.querySelector(".text").value="";
@@ -44,8 +46,11 @@ document.querySelector(".adding").addEventListener("click",()=>{
 document.querySelector(".btn").addEventListener("click",()=>{
     if(document.querySelector(".text").value!=""){
  cityName=document.querySelector(".text").value;
- document.querySelector(".adding").style.display="inline";
- document.querySelector("form").style.display="none";
- getWeather()
-    }else{  document.querySelector(".error").inner="Something went wrong";}
-});getWeather();
+ document.querySelector(".invalid").textContent="";
+//  document.querySelector(".adding").style.display="inline";
+//  document.querySelector("form").style.display="none";
+  getWeather();
+    }else{  document.querySelector(".invalid").textContent="Please enter a valid city name";}
+});
+
+getWeather();
