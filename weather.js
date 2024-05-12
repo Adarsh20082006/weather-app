@@ -24,7 +24,7 @@
     catch(err){
         document.querySelector(".main").style.display="none"
         document.querySelector(".last").style.display="none";
-        document.querySelector(".error").textContent="Something went wrong";
+        document.querySelector(".error").innerHTML=`Something went wrong<br><a href='${err}'>click here to know what happens</a>`;
     }
     }
 async function getWeather(){
@@ -47,5 +47,5 @@ document.querySelector(".btn").addEventListener("click",()=>{
  document.querySelector(".adding").style.display="inline";
  document.querySelector("form").style.display="none";
  getWeather()
-    }else{  document.querySelector(".error").innerHTML=`Something went wrong<br><a href='${err}'>click here to know what happens</a>`;}
+    }else{  document.querySelector(".error").inner="Something went wrong";}
 });getWeather();
