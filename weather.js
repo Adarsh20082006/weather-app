@@ -24,7 +24,7 @@
     catch(err){
         document.querySelector(".main").style.display="none"
         document.querySelector(".last").style.display="none";
-        document.querySelector(".error").innerHTML=`Something went wrong<br><a href='${err}'>click here to know what happens</a>`;
+        document.querySelector(".error").innerHTML=`Something went wrong<br><small>${err}</small>`;
     }
     }
 async function getWeather(){
