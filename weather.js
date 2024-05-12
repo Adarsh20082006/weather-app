@@ -47,5 +47,5 @@ document.querySelector(".btn").addEventListener("click",()=>{
  document.querySelector(".adding").style.display="inline";
  document.querySelector("form").style.display="none";
  getWeather()
-    }else{  document.querySelector(".error").textContent="Something went wrong";}
+    }else{  document.querySelector(".error").innerHTML=`Something went wrong<br><a href='${err}'>click here to know what happens</a>`;}
 });getWeather();
