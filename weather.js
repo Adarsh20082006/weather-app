@@ -47,6 +47,7 @@ document.querySelector(".btn").addEventListener("click",()=>{
     if(document.querySelector(".text").value!=""){
  cityName=document.querySelector(".text").value;
  document.querySelector(".invalid").textContent="";
+ document.querySelector(".text").value="";
 //  document.querySelector(".adding").style.display="inline";
 //  document.querySelector("form").style.display="none";
   getWeather();
