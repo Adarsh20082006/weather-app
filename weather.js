@@ -2,10 +2,11 @@
     let APIkey='6af6bdc540c3b760cfa832214a8b4a5b';
     let lat;
     let lon;
+    async function getApi(){  
     document.querySelector(".main").style.display="block"
     document.querySelector(".last").style.display="flex";
     document.querySelector(".error").textContent="";
-    async function getApi(){
+   
     try{
      let fetched= await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=15&appid=${APIkey}`);
     let data=await fetched.json();
@@ -53,5 +54,6 @@ document.querySelector(".btn").addEventListener("click",()=>{
   getWeather();
     }else{  document.querySelector(".invalid").textContent="Please enter a valid city name";}
 });
+
 
 // getWeather();
